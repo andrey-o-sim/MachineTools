@@ -2,6 +2,10 @@
     text-indent: 50px;
 }
 
+#ourWork .work-tool-list-text {
+    margin-top: 20px;
+}
+
 #ourWork .work-tool-list-text p {
     font-size: 18px;
     font-weight: bold;
