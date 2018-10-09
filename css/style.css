@@ -38,6 +38,10 @@
     font-family: initial;
 }
 
+#description .container .card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #description .container .card .card-body .work-tool-desc-btn:hover {
     background-color: #ccc;
 }
