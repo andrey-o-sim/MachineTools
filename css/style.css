@@ -55,9 +55,21 @@
     margin-right: 10px;
 }
 
+#description .container .work-tool-desc-row .work-tool-card {
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    cursor: pointer;
+}
+
+#description .container .work-tool-desc-row .work-tool-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #0d72af;
+    border: 1px solid #0d72af;
+}
+
 .portfolio-modal .modal-dialog .modal-content {
     width: 60%;
     margin: auto;
+    padding: 80px 0;
 }
 
 .portfolio-modal .modal-dialog .modal-content .close-modal {
@@ -65,8 +77,18 @@
     height: 30px;
 }
 
+.portfolio-modal .modal-dialog .modal-content .container .modal-body {
+    padding: 0;
+}
+
 .portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description {
     text-align: justify;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .list-inline {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
 }
 
 .portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description p {
@@ -75,10 +97,11 @@
 }
 
 .portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-header-row {
+    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin: 10px 0;
     font-weight: bold;
@@ -90,6 +113,10 @@
 
 .portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-item-row {
     text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 @media(min-width:992px) {
