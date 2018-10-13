@@ -25,15 +25,8 @@
     border: none;
     padding: 8px 16px;
     vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
     cursor: pointer;
-    white-space: nowrap;
-    color: #000;
     background-color: #f1f1f1;
-    display: block;
-    width: 100%;
     font-size: 15px;
     font-family: initial;
 }
@@ -60,4 +53,65 @@
     color: #3585ca;
     display: inline-block;
     margin-right: 10px;
+}
+
+.portfolio-modal .modal-dialog .modal-content {
+    width: 60%;
+    margin: auto;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal {
+    width: 30px;
+    height: 30px;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description {
+    text-align: justify;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description p {
+    text-indent: 50px;
+    margin-bottom: 10px;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table {
+    margin: 15px 0;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-header-row {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    background-color: #fbfbfb;
+    padding: 5px 0;
+}
+
+.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-item-row {
+    text-align: center;
+}
+
+@media(min-width:992px) {
+    #description .container .work-tool-desc-row .work-tool-card {
+        min-height: 700px;
+    }
+
+    #description .container .card .card-body .work-tool-desc-btn {
+        position: absolute;
+        width: 90%;
+        bottom: 10px;
+        left: 14px;
+    }
+}
+
+@media(max-width:991px) {
+    #description .container .work-tool-desc-row {
+        width: 50%;
+        margin: auto;
+    }
+
+    #description .container .work-tool-desc-row .work-tool-desc-col {
+        margin-top: 15px;
+    }
 }
