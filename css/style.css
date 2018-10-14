@@ -1,12 +1,13 @@
-#ourWork .work-tool-text p {
+/* Our Work */
+#our-work-section .work-tool-text p {
     text-indent: 50px;
 }
 
-#ourWork .work-tool-list-text {
+#our-work-section .work-tool-list-text {
     margin-top: 20px;
 }
 
-#ourWork .work-tool-list-text p {
+#our-work-section .work-tool-list-text p {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
@@ -15,92 +16,89 @@
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#description .container .carousel .carousel-inner .carousel-item {
+/* Wort Type */
+#work-type-section .container .carousel .carousel-inner .carousel-item {
     width: 100%;
     min-height: 555px;
     background-color: gray;
 }
 
-#description .container .card .card-body .work-tool-desc-btn {
+#work-type-section .container .card .card-body .work-tool-desc-btn {
     border: none;
     padding: 8px 16px;
     vertical-align: middle;
     cursor: pointer;
-    background-color: #f1f1f1;
     font-size: 15px;
     font-family: initial;
 }
 
-#description .container .card {
+#work-type-section .container .card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#description .container .card .card-body .work-tool-desc-btn:hover {
-    background-color: #ccc;
-}
-
-#description .container .card .card-body .work-tool-desc-btn:focus {
+#work-type-section .container .card .card-body .work-tool-desc-btn:focus {
     outline: none;
 }
 
-#description .container .card .card-body .work-tool-desc-btn:active {
-    background-color: #a7a7a7;
-}
-
-#description .container .card .card-body .work-tool-desc-btn .work-tool-desc-icon {
+#work-type-section .container .card .card-body .work-tool-desc-btn .work-tool-desc-icon {
     font-size: 1.5em;
     vertical-align: middle;
-    color: #3585ca;
+    /* color: #3585ca; */
     display: inline-block;
     margin-right: 10px;
 }
 
-#description .container .work-tool-desc-row .work-tool-card {
+#work-type-section .container .card .card-body .work-tool-desc-btn .description-in-details-text {
+    vertical-align: middle;
+}
+
+#work-type-section .container .work-tool-desc-row .work-tool-card {
     transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, -webkit-transform 0.25s ease-out;
     cursor: pointer;
 }
 
-#description .container .work-tool-desc-row .work-tool-card:hover {
+#work-type-section .container .work-tool-desc-row .work-tool-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #0d72af;
     border: 1px solid #0d72af;
 }
 
-.portfolio-modal .modal-dialog .modal-content {
+/* Work Tool Modal */
+.work-tool-modal .modal-dialog .modal-content {
     width: 60%;
     margin: auto;
     padding: 80px 0;
 }
 
-.portfolio-modal .modal-dialog .modal-content .close-modal {
+.work-tool-modal .modal-dialog .modal-content .close-modal {
     width: 30px;
     height: 30px;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body {
     padding: 0;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description {
     text-align: justify;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .list-inline {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description .list-inline {
     margin: 0;
     text-align: center;
     font-weight: bold;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description p {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description p {
     text-indent: 50px;
     margin-bottom: 10px;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table {
     margin: 20px 0;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-header-row {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-header-row {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin: 10px 0;
@@ -111,7 +109,7 @@
     padding: 5px 0;
 }
 
-.portfolio-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-item-row {
+.work-tool-modal .modal-dialog .modal-content .container .modal-body .main-description .work-tool-table .table-item-row {
     text-align: center;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
@@ -119,12 +117,75 @@
     margin-bottom: 10px;
 }
 
+/* Equipment List */
+#equipment-list-section .container .equipment-list-description-row {
+    margin: 0;
+}
+
+#equipment-list-section .container .equipment-list-description-row .equipment-list {
+    counter-reset: li;
+    list-style: none;
+    font: 15px trebuchet ms, lucida sans;
+}
+
+#equipment-list-section .container .equipment-list-description-row .equipment-list.second-part {
+    counter-reset: li 4;
+}
+
+#equipment-list-section .container .equipment-list-description-row .equipment-list li {
+    position: relative;
+    display: block;
+    margin: .5em 0;
+    background: #fff;
+    color: #444;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+}
+
+#equipment-list-section .container .equipment-list-description-row .equipment-list li span {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #efefef;
+    color: #444;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#equipment-list-section .container .equipment-list-description-row .equipment-list li span::before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #017bfe;
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2em;
+    border: .3em solid #ddd;
+    text-align: center;
+    font-weight: 700;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #fff;
+}
+
+/* Media Queries */
 @media(min-width:992px) {
-    #description .container .work-tool-desc-row .work-tool-card {
+    #work-type-section .container .work-tool-desc-row .work-tool-card {
         min-height: 700px;
     }
 
-    #description .container .card .card-body .work-tool-desc-btn {
+    #work-type-section .container .card .card-body .work-tool-desc-btn {
         position: absolute;
         width: 90%;
         bottom: 10px;
@@ -133,12 +194,12 @@
 }
 
 @media(max-width:991px) {
-    #description .container .work-tool-desc-row {
+    #work-type-section .container .work-tool-desc-row {
         width: 50%;
         margin: auto;
     }
 
-    #description .container .work-tool-desc-row .work-tool-desc-col {
+    #work-type-section .container .work-tool-desc-row .work-tool-desc-col {
         margin-top: 22px;
     }
 }
